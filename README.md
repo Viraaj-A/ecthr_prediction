@@ -16,6 +16,8 @@ To note, the RoBerta Model was chosen as all academic articles across the board,
 ## Search 
 Implements semantic search with FAISS to provide contextualised results based on the query from the Issue Identifior. 
 
+We selected FAISS as it has outperformed ElasticSearch and other search tools, see the academic work provided below for the relevant benchmarks. 
+
 ## Planned Improvements
 The following improvements to the model are planned
 1. Increase the dataset from the Huggingface Publicly Available library, which contains errors, to the My-Rights.info database that contains 3x the amount of cases and has corrected for underling data errors.
