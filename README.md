@@ -36,5 +36,5 @@ https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/3033966/no.ntnu%3ains
 https://arxiv.org/pdf/2110.00976v4.pdf
 https://arxiv.org/pdf/2204.00820.pdf
 
-Overall, the ECTHR Predictor App
+Overall, the ECTHR Predictor App utilises state of the art mechanisms and the most upto date academic work to democratise legal prediction and search to ensure that people without sophisticated understanding can still access justice. 
 
