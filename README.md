@@ -16,7 +16,7 @@ To note, the RoBerta Model was chosen as all academic articles across the board,
 ## Search 
 Implements semantic search with FAISS to provide contextualised results based on the query from the Issue Identifior. 
 
-We selected FAISS as it has outperformed ElasticSearch and other search tools, see the academic work provided below for the relevant benchmarks. 
+We selected FAISS as it has outperformed ElasticSearch and other search tools, see the following for academic support to this finding: https://arxiv.org/pdf/2204.00820.pdf
 
 ## Planned Improvements
 The following improvements to the model are planned
