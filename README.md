@@ -1,7 +1,7 @@
 # ecthr_prediction
 The ECTHR Prediction app, a Flask/Python webapp, applies human centered design principles to the European Court of Human Rights to make human rights accessible to people that lack financial resources and do not have professional legal experience. 
 
-This app has three main fucntionalities: 
+This app has three main fucntionalities: Issue Identifior, Predictor and the Search
 
 ## Issue Identifior
 A seq2seq T5 model that reformulate a user's input query, which will be in simple language, to text that is styled as a legal fact. This model will be fine tuned on the Hugging Face: lex_glue, ecthr_a dataset to create a factual reformulation that is in style with the European Court of Human Rights writing. 
