@@ -17,6 +17,20 @@ To note, the RoBerta Model was chosen as all academic articles across the board,
 
 
 ## Planned Improvements
+
+### Dataset 
+
+Firstly, we will expand the dataset from the Huggingface Publicly Available, lex_glue, dataset to the My-Rights Dataset. This will have the following benefits:
+* 
+
+### Issue Identifior Improvements
+
+
+
+### Predictor Improvements
+
+
+### Search Improvements
 The following improvements to the model are planned
 1. Increase the dataset from the Huggingface Publicly Available library, which contains errors, to the My-Rights.info database that contains 3x the amount of cases and has corrected for underling data errors.
 2. Conduct Named Entity Recognition and run multiple regex scripts to clean the dataset and improve bias scores, for examples, remove names of States that could lead to confounding issues for the Predictor and remove paragraph number labels, remove references to gender, remove references to specific religions.
