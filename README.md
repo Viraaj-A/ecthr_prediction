@@ -21,7 +21,7 @@ To note, the RoBerta Model was chosen as all academic articles across the board,
 ### Dataset 
 
 Firstly, we will expand the dataset from the Huggingface Publicly Available, lex_glue, dataset to the My-Rights Dataset. This will have the following benefits:
-* 
+- asdfadf
 
 ### Issue Identifior Improvements
 
