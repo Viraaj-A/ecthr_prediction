@@ -1,0 +1,13 @@
+SHA256:cxnmcc4HiArAvSidfcmOzPle6TiSi8m5egnGjbQ0pCA vj@DESKTOP-SOMT02R
+The key's randomart image is:
++---[RSA 3072]----+
+| ...             |
+|E....    . .     |
+|=. +.o .. = o    |
+|o++ o.+. o B .   |
+|+.=o =. S + o .  |
+|.= .= .  +   .   |
+|.. . o  o        |
+| .o+o o+         |
+|.o*..+o..        |
++----[SHA256]-----+

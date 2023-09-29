@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+            <div class="text-center">
+                <h3>My Holiday</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Search Form -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center">
+                <h3>Your Search Results:</h3>
+                <p>Departure Date: {{ departure_date }}</p>
+                <p>Return Date: {{ return_date }}</p>
+                <p>Departure Airport: {{ departure_airport }}</p>
+                <p>Destination Airport: {{ destination_airport }}</p>
+                <p>Flight Type: {{ flight_type }}</p>
+                <p>Class Type: {{ class_type }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search Form -->
+
+
+<div class="container">
+    <footer class="footer-container text-center">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+                <div class="text-center">
+                  <h4>My Holiday does not collect or store any of your data</h4>
+                </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+</div>
+{% endblock %}

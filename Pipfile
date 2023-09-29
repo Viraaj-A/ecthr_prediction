@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+torch = "*"
+scikit-learn = "*"
+tqdm = "*"
+numpy = "*"
+datasets = "*"
+nltk = "*"
+scipy = "*"
+transformers = {extras = ["torch"], version = "*"}
+gcloud = "*"
+flask = "*"
+pandas = "*"
+psycopg2 = "*"
+flask-wtf = "*"
+psycopg2-binary = "*"
+sqlacodegen = "*"
+autocorrect = "*"
+flask-sqlalchemy = "*"
+openai = "*"
+flask-paginate = "*"
+flask-pagination = "*"
+faiss-cpu = "*"
+sentence-transformers = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.1"

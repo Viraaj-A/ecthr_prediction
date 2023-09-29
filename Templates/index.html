@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+        <div class="text-center" style="margin-top:30px;">
+          <h2>Find out if your human rights have been violated</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+           <h3 style="margin: 30px auto 0;">Enter what happened to you that you think may have gone against your human rights</h3>
+           <h4>For example enter into the search box: "A cop hit me, I don't know why"</h4>
+           <form action="/generate-text" method="post" class="text-center">
+               <textarea name="prompt" class="form-control" style="margin: 20px auto 0;"></textarea>
+               <input type="submit" value="Convert to legal writing" class="btn btn-primary" style="display: block; margin: 0 auto;">
+           </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+            {% if generated_text %}
+                <h3>The following is your legal styled writing of your problem:</h3>
+                <h3 style="border: 1px solid black;"><i>{{ generated_text }}</i></h3>
+                <form action="/predict" method="post" class="text-center">
+                    <textarea name="predict" style="display: none;">{{ generated_text }}</textarea>
+                    <!-- Include the original prompt as a hidden input -->
+                    <input type="hidden" name="original_prompt" value="{{ request.form['prompt'] }}">
+                    <input type="submit" value="Click here to find out which of your human rights are violated" class="btn btn-primary" style="display: block; margin: 0 auto;">
+                </form>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+            {% if prediction %}
+                <ul>
+                {% for article_result in prediction %}
+                    <li>{{article_result}}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        <div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+        {% if prediction %}
+            <form action="/results/" method="post" class="text-center">
+                <textarea name="search" style="display: none;">{{ generated_text }}</textarea>
+                <input type="hidden" name="original_prompt" value="{{ request.form['prompt'] }}">
+                <input type="submit" value="Click here to find cases for your problem" class="btn btn-primary" style="display: block; margin: 0 auto;">
+            </form>
+        {% endif %}
+        </div>
+    </div>
+</div>
+{% if results %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+                <h2>Results:</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <ul>
+            {% for result in results %}
+            <div class="container">
+                <div class="row border">
+                    <div class = "col-md-11">
+                        <div class="row">
+                            <div class = "col-md-12">
+                                <ul id="result_list">
+                                    <li class="horizontal"><a href="{{result[0]}}"><b>{{result[2]}}</b>
+                                            <i class="fa fa-external-link" style="margin-left: 10px;"></i></a></li>
+                                    <li class="horizontal">Importance Rating: <b>{{result[3]}} </b></li>
+                                    <li class="horizontal first">Delivered On: <b>{{result[4]}} </b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+<!--                            <div class="col-md-4">-->
+<!--                                <h4><u>SEARCH HIGHLIGHTS</u></h4>-->
+<!--                                {{result[6]|safe}}-->
+<!--                            </div>-->
+                            <div class="col-md-6">
+                                <h4><u>JUDGMENT FACTS</u></h4>
+                                {{result[5]|truncate(255,false,'...')}}
+                            </div>
+                            <div class="col-md-6">
+                                <h4><u>JUDGMENT CONCLUSION</u></h4>
+                                {{result[6]|truncate(255,false,'...')}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <br/>
+            </div>
+        {% endfor %}
+        </ul>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+
+    </div>
+  </div>
+</footer>
+{% endblock %}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="vj@34.116.67.24:22 key (5)" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="vj@34.116.67.24:22 key">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_534" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vj@34.116.67.24:22 key (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_132" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vj@34.116.67.24:22 key (3)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_457" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vj@34.116.67.24:22 key (4)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mnt/mydisk/remote_test" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vj@34.116.67.24:22 key (5)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_213" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vj@34.116.67.24:22 key (6)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_869" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
