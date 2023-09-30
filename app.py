@@ -2,7 +2,7 @@ from __init__ import init_app
 
 app = init_app()
 
-Development = True
+Development = False
 
 if Development == False:
     if __name__ == "__main__":

@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-torch = "*"
 scikit-learn = "*"
 tqdm = "*"
 numpy = "*"
@@ -26,6 +25,7 @@ flask-paginate = "*"
 flask-pagination = "*"
 faiss-cpu = "*"
 sentence-transformers = "*"
+torch = "==2.0.0"
 
 [dev-packages]
 
