@@ -9,7 +9,7 @@ from sqlalchemy.dialects.postgresql import TSVECTOR
 import openai
 import torch
 from transformers import RobertaTokenizerFast, RobertaForSequenceClassification
-openai.api_key = "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"
+openai.api_key = "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"
 from sentence_transformers import SentenceTransformer
 import faiss
 import pickle
