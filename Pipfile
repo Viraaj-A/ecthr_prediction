@@ -9,7 +9,7 @@ tqdm = "*"
 numpy = "*"
 datasets = "*"
 nltk = "*"
-pip scipy = "*"
+scipy = "*"
 transformers = {extras = ["torch"], version = "*"}
 gcloud = "*"
 flask = "*"
@@ -26,6 +26,7 @@ flask-pagination = "*"
 faiss-cpu = "*"
 sentence-transformers = "*"
 install = "*"
+torch = {file = "https://download.pytorch.org/whl/cpu/torch-2.0.0%2Bcpu-cp311-cp311-win_amd64.whl"}
 
 [dev-packages]
 
