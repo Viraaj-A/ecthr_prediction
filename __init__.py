@@ -1,6 +1,5 @@
 import flask
 from flask import Flask, render_template, request
-from search import search_text2
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Text, Date
 from sqlalchemy.orm import sessionmaker
