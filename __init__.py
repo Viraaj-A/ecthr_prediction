@@ -8,7 +8,7 @@ from flask import Flask, render_template, request
 import openai
 import torch
 from transformers import RobertaTokenizerFast, RobertaForSequenceClassification
-openai.api_key = "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"
+openai.api_key = "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"
 from sentence_transformers import SentenceTransformer
 import faiss
 import pickle

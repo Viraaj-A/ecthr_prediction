@@ -148,6 +148,6 @@ git clone https://github.com/Viraaj-A/ecthr_prediction.git
 pipenv shell 
 
 #Run app 
-
+python app.py 
 
 
