@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+openai = "*"
+transformers = {extras = ["torch"], version = "*"}
+sentence-transformers = "*"
+faiss-cpu = "*"
+gunicorn = "*"
+torch = {file = "https://download.pytorch.org/whl/cpu/torch-2.0.0%2Bcpu-cp311-cp311-win_amd64.whl"}
+
+[dev-packages]
+pipdeptree = "*"
+
+[requires]
+python_version = "3.11"
