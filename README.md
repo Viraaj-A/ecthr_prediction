@@ -27,11 +27,24 @@ A multilabel classifier, fine tuned on the Hugging Face: lex_glue, ecthr_a datas
 •	Article 14: Prohibition of discrimination
 •	Article 1 of Protocol 1: Protection of property
 
-The Predictor comes with two models, one where truncation is set to 512 tokens (RoBerta) and the second implements a sliding window technique to allow for a varying sequence length that accepts all sequences lengths (Bert). The f1 scores are provided in the following file [FILL IN FILE]. 
-
 The Predictor takes the output of the Issue Identifier to make the inference. 
 
+The Predictor comes with two models, one where truncation is set to 512 tokens (RoBerta) and the second implements a sliding window technique to allow for a varying sequence length that accepts all sequences lengths (Bert). The f1 scores are provided in the table below.
+
+| Epoch | Training Loss | Validation Loss | Accuracy | Precision/macro | Recall/macro | F1/macro | Precision/micro | Recall/micro | F1/micro | Roc Auc  |
+|-------|---------------|-----------------|----------|-----------------|--------------|----------|-----------------|--------------|----------|----------|
+| 1     | 0.162600      | 0.180850        | 0.493000 | 0.562606        | 0.470115     | 0.500645 | 0.694989        | 0.601887     | 0.645096 | 0.934406 |
+| 2     | 0.135800      | 0.165844        | 0.535000 | 0.574869        | 0.476420     | 0.482516 | 0.696819        | 0.661321     | 0.678606 | 0.947212 |
+| 3     | 0.114700      | 0.166618        | 0.532000 | 0.723237        | 0.575300     | 0.605141 | 0.698444        | 0.677358     | 0.687739 | 0.948240 |
+| 4     | 0.093300      | 0.171745        | 0.542000 | 0.704298        | 0.591423     | 0.613898 | 0.702370        | 0.699057     | 0.700709 | 0.946493 |
+| 5     | 0.082100      | 0.173036        | 0.536000 | 0.724979        | 0.598535     | 0.629181 | 0.702574        | 0.695283     | 0.698909 | 0.946950 |
+
+
 To note, the RoBerta Model was chosen as all academic articles across the board, identified this model as producing the most accurate results for a multilabel classification exercise. We agree with this finding as it has beaten out BigBird, Bert, and HIER-Bert. The academic sources can be found below (‘Neural Legal Judgment Prediction in English’, ‘Classifying European Court of Human Rights Cases Using Transformer-Based Techniques’, 
+
+512 Token limit RoBerta Notebook (utilised): https://colab.research.google.com/drive/1T78zSPTc_yZII09Y7V3ucCRCG765a39m#scrollTo=oLw6b3M7l6gV
+Varying Length Bert Notebook (not utilised): https://colab.research.google.com/drive/1KqXLdZIAMSfkC6hj_eaEKZ6O71bYSY8m
+
 
 ## Search 
 
