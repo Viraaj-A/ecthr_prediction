@@ -131,21 +131,21 @@ Overall, the ECTHR Predictor App utilises state of the art mechanisms and the mo
 
 Pipenv is the preferred Python environment handler, if using pip, a requirements file is also provided. 
 
-#Install Pipenv 
-pip install pipenv
+#Navigatge to project directories
+cd /path/to/your_projects/
 
-#Navigatge to project directory
-cd /path/to/your/project
+#Clone GitHub repo
+git clone https://github.com/Viraaj-A/ecthr_prediction.git
+
+#Navigate to the Github repo folder and install Pipenv
+pip install pipenv
 
 #Initialize new environment and activate environment
 pipenv --python 3.11
 pipenv shell
 
-#Clone the GitHub Repo (may require Github LFS)
-git clone https://github.com/Viraaj-A/ecthr_prediction.git
-
 #Install dependencies 
-pipenv shell 
+pipenv install 
 
 #Run app 
 python app.py 

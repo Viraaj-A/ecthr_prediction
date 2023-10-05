@@ -8,10 +8,25 @@ from flask import Flask, render_template, request
 import openai
 import torch
 from transformers import RobertaTokenizerFast, RobertaForSequenceClassification
-openai.api_key = "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"
 from sentence_transformers import SentenceTransformer
 import faiss
 import pickle
+from cryptography.fernet import Fernet
+
+# Load the encryption key
+with open("secret.key", "rb") as key_file:
+    key = key_file.read()
+
+# Load the encrypted API key
+with open("encrypted_api_key.txt", "rb") as encrypted_file:
+    encrypted_api_key = encrypted_file.read()
+
+# Decrypt the API key
+cipher_suite = Fernet(key)
+decrypted_api_key = cipher_suite.decrypt(encrypted_api_key).decode("utf-8")
+
+# Now set the API key
+openai.api_key = decrypted_api_key
 
 # Load tokenizer and classifier model
 model_path = 'checkpoint5000/'

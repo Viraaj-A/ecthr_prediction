@@ -11,6 +11,7 @@ sentence-transformers = "*"
 faiss-cpu = "*"
 gunicorn = "*"
 torch = {file = "https://download.pytorch.org/whl/cpu/torch-2.0.0%2Bcpu-cp311-cp311-win_amd64.whl"}
+cryptography = "*"
 
 [dev-packages]
 pipdeptree = "*"
