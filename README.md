@@ -3,7 +3,7 @@ The ECTHR Prediction App, a Flask/Python webapp, applies human centred design pr
 
 This app has three main functionalities: Issue Identifier, Predictor and Search. These functionalities will be explained further, below. All of these functionalities are in their beta phase and work to show their potential as a proof of concept. The planned improvements are below. 
 
-The ECTHR Prediction App will be built into the My-Rights.info application as it’s own unique tool. 
+The ECTHR Prediction App will be built into the My-Rights.info application as it’s own unique tool.
 
 ## Issue Identifier
 
@@ -126,4 +126,28 @@ LexGLUE: A Benchmark Dataset for Legal Language Understanding in English - https
 Efficient comparison of sentence embeddings - https://arxiv.org/pdf/2204.00820.pdf
 
 Overall, the ECTHR Predictor App utilises state of the art mechanisms and the most up to date academic work to democratise legal prediction and search to ensure that all people irrespective of their characteristics can still access justice. 
+
+## Usage
+
+Pipenv is the preferred Python environment handler, if using pip, a requirements file is also provided. 
+
+#Install Pipenv 
+pip install pipenv
+
+#Navigatge to project directory
+cd /path/to/your/project
+
+#Initialize new environment and activate environment
+pipenv --python 3.11
+pipenv shell
+
+#Clone the GitHub Repo (may require Github LFS)
+git clone https://github.com/Viraaj-A/ecthr_prediction.git
+
+#Install dependencies 
+pipenv shell 
+
+#Run app 
+
+
 

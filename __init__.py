@@ -1,14 +1,14 @@
 import flask
 from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import Column, Text, Date
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.dialects.postgresql import TSVECTOR
+# from flask_sqlalchemy import SQLAlchemy
+# from sqlalchemy import Column, Text, Date
+# from sqlalchemy.orm import sessionmaker
+# from sqlalchemy.ext.automap import automap_base
+# from sqlalchemy.dialects.postgresql import TSVECTOR
 import openai
 import torch
 from transformers import RobertaTokenizerFast, RobertaForSequenceClassification
-openai.api_key = "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"
+openai.api_key = "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"
 from sentence_transformers import SentenceTransformer
 import faiss
 import pickle
@@ -46,27 +46,27 @@ def init_app():
 
     with app.app_context():
 
-        db = SQLAlchemy(app)
-        Base = automap_base()
-
-        class EnglishSearch(Base):
-            __tablename__ = "english_search"
-            existing = True
-
-            item_id = Column(Text, primary_key=True)
-            url = Column(Text)
-            entire_text = Column(Text)
-            case_title = Column(Text)
-            importance_number = Column(Text)
-            judgment_date = Column(Date)
-            facts = Column(Text)
-            conclusion = Column(Text)
-            ecli = Column(Text)
-            textsearchable_index_col = Column(TSVECTOR)
-
-        Base.metadata.create_all(db.engine)
-        Session = sessionmaker(bind=db.engine)
-        session = Session()
+        # db = SQLAlchemy(app)
+        # Base = automap_base()
+        #
+        # class EnglishSearch(Base):
+        #     __tablename__ = "english_search"
+        #     existing = True
+        #
+        #     item_id = Column(Text, primary_key=True)
+        #     url = Column(Text)
+        #     entire_text = Column(Text)
+        #     case_title = Column(Text)
+        #     importance_number = Column(Text)
+        #     judgment_date = Column(Date)
+        #     facts = Column(Text)
+        #     conclusion = Column(Text)
+        #     ecli = Column(Text)
+        #     textsearchable_index_col = Column(TSVECTOR)
+        #
+        # Base.metadata.create_all(db.engine)
+        # Session = sessionmaker(bind=db.engine)
+        # session = Session()
 
         def get_prediction(input_text):
             # Preprocess the input text
