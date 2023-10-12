@@ -133,6 +133,7 @@ Overall, the ECTHR Predictor App utilises state of the art mechanisms and the mo
 
 Pipenv is the preferred Python environment handler, if using pip, a requirements file is also provided. 
 
+'''
 #Navigatge to project directories
 cd /path/to/your_projects/
 
@@ -151,5 +152,5 @@ pipenv install
 
 #Run app 
 python app.py 
-
+'''
 
