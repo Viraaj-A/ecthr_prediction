@@ -5,6 +5,8 @@ This app has three main functionalities: Issue Identifier, Predictor and Search.
 
 The ECTHR Prediction App will be built into the My-Rights.info application as it’s own unique tool.
 
+The current beta of this app can be accessed here: https://walrus-app-9dcb8.ondigitalocean.app/
+
 ## Issue Identifier
 
 The Issue Identifier takes a user prompt, which we assume will be in simple English, and converts it into a legalistic style. The purpose of this conversion/translation is to:
