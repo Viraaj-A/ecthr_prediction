@@ -119,13 +119,13 @@ The entire website will be improved to have the following accessibility principl
 ## Academic Work Relied Upon
 
 The ECTHR Prediction App, has been created from understanding and applying multiple leading academic sources, where the code base is not publicly available. The following freely accessible work has been relied upon:
-Classifying European Court of Human Rights Cases Using Transformer-Based Techniques - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10130544
-Neural Legal Judgment Prediction in English - https://aclanthology.org/P19-1424/
-Zero-shot Transfer of Article-aware Legal Outcome Classification for European Court of Human Rights Cases  - https://aclanthology.org/2023.findings-eacl.44.pdf
-Deconfounding Legal Judgment Prediction for European Court of Human Rights Cases Towards Better Alignment with Experts - https://aclanthology.org/2022.emnlp-main.74.pdf
-Classifying European Court of Human Rights cases using transformer based Models - https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/3033966/no.ntnu%3ainspera%3a112296943%3a24749335.pdf?sequence=1&isAllowed=y
-LexGLUE: A Benchmark Dataset for Legal Language Understanding in English - https://arxiv.org/pdf/2110.00976v4.pdf
-Efficient comparison of sentence embeddings - https://arxiv.org/pdf/2204.00820.pdf
+ - Classifying European Court of Human Rights Cases Using Transformer-Based Techniques - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10130544
+ - Neural Legal Judgment Prediction in English - https://aclanthology.org/P19-1424/
+ - Zero-shot Transfer of Article-aware Legal Outcome Classification for European Court of Human Rights Cases  - https://aclanthology.org/2023.findings-eacl.44.pdf
+ - Deconfounding Legal Judgment Prediction for European Court of Human Rights Cases Towards Better Alignment with Experts - https://aclanthology.org/2022.emnlp-main.74.pdf
+ - Classifying European Court of Human Rights cases using transformer based Models - https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/3033966/no.ntnu%3ainspera%3a112296943%3a24749335.pdf?sequence=1&isAllowed=y
+ - LexGLUE: A Benchmark Dataset for Legal Language Understanding in English - https://arxiv.org/pdf/2110.00976v4.pdf
+ - Efficient comparison of sentence embeddings - https://arxiv.org/pdf/2204.00820.pdf
 
 Overall, the ECTHR Predictor App utilises state of the art mechanisms and the most up to date academic work to democratise legal prediction and search to ensure that all people irrespective of their characteristics can still access justice. 
 
