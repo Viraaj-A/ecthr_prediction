@@ -104,7 +104,9 @@ The following improvements to the model are planned
 
 ### Search Improvements
 
-Convert the PostgreSQL full text search to semantic search with FAISS to provide contextualised results based on the query from the Issue Identifior. As of late 2922,  FAISS is outperforming ElasticSearch and other vector based search libraries, see the following for academic support to this finding: https://arxiv.org/pdf/2204.00820.pdf
+Utilise different word embedding models, including various mean pooling techniques, to identify what combination outputs the most relevant results. 
+
+As of late 2922,  FAISS is outperforming ElasticSearch and other vector based search libraries, see the following for academic support to this finding: https://arxiv.org/pdf/2204.00820.pdf
 
 Further, there are numerous data labelling issues in the HUDOC database which is making the FAISS search ineffective. These data labelling issues will be cleaned in order to make the search effective. 
 
