@@ -55,7 +55,7 @@ The current Search is built using FAISS indexing library for efficient similarit
 -	Sentence embedding - sentence-transformers/multi-qa-mpnet-base-dot-v1; and 
 -	Sentence embedding - sentence-transformers/all-MiniLM-L6-v2.
 
-The indexes can be found in this folder [INSERT Folder Name]. Further data cleaning has to occur to create better results for the FAISS search. These issues exist due to the underlying data quality issues with the HUDOC database itself. Currently, we are utilising PostgreSQL’s full text search functionality. 
+The indexes can be found in the 'faiss_index' folder. Further data cleaning has to occur to create better results for the FAISS search. These issues exist due to the underlying data quality issues with the HUDOC database itself. Currently, we are utilising PostgreSQL’s full text search functionality. 
 
 We have chosen FAISS as it has outperformed many other search systems including ElasticSearch, refer to the following academic work – ‘Efficient comparison of sentence embeddings’. 
 
