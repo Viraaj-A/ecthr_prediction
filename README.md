@@ -106,7 +106,7 @@ The following improvements to the model are planned
 
 Utilise different word embedding models, including various mean pooling techniques, to identify what combination outputs the most relevant results. 
 
-As of late 2922,  FAISS is outperforming ElasticSearch and other vector based search libraries, see the following for academic support to this finding: https://arxiv.org/pdf/2204.00820.pdf
+As of late 2022,  FAISS is outperforming ElasticSearch and other vector based search libraries, see the following for academic support to this finding: https://arxiv.org/pdf/2204.00820.pdf
 
 Further, there are numerous data labelling issues in the HUDOC database which is making the FAISS search ineffective. These data labelling issues will be cleaned in order to make the search effective. 
 
